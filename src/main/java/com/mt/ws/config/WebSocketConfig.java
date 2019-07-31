@@ -10,7 +10,9 @@ import org.springframework.web.socket.server.standard.ServerEndpointExporter;
 @Configuration  
 public class WebSocketConfig {  
     @Bean  
-    public ServerEndpointExporter serverEndpointExporter(){  
+    public ServerEndpointExporter serverEndpointExporter(){ 
+    	 System.out.println(123);
         return new ServerEndpointExporter();  
+       
     }  
 }  
